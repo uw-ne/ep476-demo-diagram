@@ -46,7 +46,7 @@ markdown file such as this.
     * Determine if next event is interaction or boundary crossing
       * For boundary crossing - record which boundary
       * For interaction - update direction & energy
-        * Sample an agle from isotropic distribution in 4*pi
+        * Sample an angle from isotropic distribution in 4*pi
         * Calculate a new energy from initial energy & direction and new direction
           * return initial energy (for now)
     * Update position
