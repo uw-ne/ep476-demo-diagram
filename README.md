@@ -65,8 +65,7 @@ markdown file such as this.
       * assign fixed energy (for now)
   * Repeat until history is terminated
     * Look up mean free path for current material and particle energy
-    * Sample distance to nuclear interaction
-      * Calculate distance in units of mean free path
+    * Sample distance to nuclear interaction in mean free paths
     * Calculate distance to boundary
       * Initialize min(distance to surface)
       * Loop over bounding surfaces
