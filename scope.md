@@ -29,7 +29,6 @@ defined energy, as opposed to a realistic distribution around a single
 emission line or multiple emissions or even a continuum.  This project will
 begin with a single energy.
 
-
-
 Having made these decisions on scope and complexity, a reasonable diagram of
-the software that includes details on the source sampling could be:
+the software that includes details on the source sampling is considered an
+[intermediate diagram](intermediate.md).
