@@ -66,7 +66,7 @@ software package to a text-based outline.  The latter is most effective for a
 markdown file such as this.
 
 * Define domain & source
-* ([#5]) Loop over many histories
+* #5 Loop over many histories
   * (#4) Sample source characteristics
     * Sample position
       * assign fixed point source position (for now)
