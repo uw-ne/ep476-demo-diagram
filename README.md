@@ -66,7 +66,7 @@ software package to a text-based outline.  The latter is most effective for a
 markdown file such as this.
 
 * Define domain & source
-* #5 Loop over many histories
+* [#5][i5] Loop over many histories
   * (#4) Sample source characteristics
     * Sample position
       * assign fixed point source position (for now)
@@ -100,3 +100,9 @@ This detailed version emerged from a few rounds of less detailed diagramming:
 * [Initial Refinement](refinement.md)
 * [Scope and Progression](scope.md)
 * [Additional Refinement](additional.md)
+
+[i3]: https://github.com/uw-ne/ep476-demo-diagram/issues/3
+[i4]: https://github.com/uw-ne/ep476-demo-diagram/issues/4
+[i5]: https://github.com/uw-ne/ep476-demo-diagram/issues/5
+[i6]: https://github.com/uw-ne/ep476-demo-diagram/issues/6
+[i7]: https://github.com/uw-ne/ep476-demo-diagram/issues/7
