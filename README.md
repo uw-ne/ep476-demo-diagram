@@ -66,16 +66,16 @@ software package to a text-based outline.  The latter is most effective for a
 markdown file such as this.
 
 * Define domain & source
-* [#5][i5] Loop over many histories
-  * (#4) Sample source characteristics
+* ([#5][i5]) Loop over many histories
+  * ([#4][i4]) Sample source characteristics
     * Sample position
       * assign fixed point source position (for now)
     * Sample direction
-      * (#3) sample an angle from an isotropic distribution in 4*pi (for now)
+      * ([#3][i3]) sample an angle from an isotropic distribution in 4*pi (for now)
     * Sample energy
       * assign fixed energy (for now)
   * Repeat until history is terminated
-    * (#7) Look up mean free path for current material and particle energy
+    * ([#7][i7]) Look up mean free path for current material and particle energy
     * Sample distance to nuclear interaction in mean free paths
     * Calculate distance to boundary
       * Initialize min(distance to surface)
@@ -92,7 +92,7 @@ markdown file such as this.
           * return initial energy (for now)
     * Update position
     * Record contributions to tallies
-    * (#6) Check for termination conditions
+    * ([#6][i6]) Check for termination conditions
 
 This detailed version emerged from a few rounds of less detailed diagramming:
 
