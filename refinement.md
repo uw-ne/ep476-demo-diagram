@@ -2,7 +2,7 @@
 
 # Monte Carlo Radiation Transport
 
-### Initial Refinement
+## Initial Refinement
 
 From the [first pass](first-pass.md) diagram, it is useful to refine it and
 add detail at each layer.  Refinement of this diagram is often best

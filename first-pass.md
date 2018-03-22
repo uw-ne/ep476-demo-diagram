@@ -1,4 +1,8 @@
-g### First Pass
+## Demonstration of Project Design and Diagramming
+
+# Monte Carlo Radiation Transport
+
+## First Pass
 
 It is often valuable to sketch the overall problem first with a relatively
 coarse granularity, covering the majority of what needs to happen.
