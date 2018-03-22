@@ -14,6 +14,37 @@ following a different path based on random sampling of the physical processes
 encountered by each particle.  The mean behavior of those particles is
 recorded to estimate the overall radiation fields.
 
+## Requirements
+
+This software is required to stochastically estimate the radiation flux in
+different regions of a 3-D domain.  Each region will be defined by
+constructive solid geometry using only intersections of half-spaces defined by
+analytical surfaces.  Each region may have a different material, as
+represented by interaction parameters such as macroscopic cross-sections or
+annenuation coefficients.  The user will be able to define the domain and
+source characteristics, as well as how many individual histories should be
+used.
+
+## Scope and Complexity
+
+The first milestone for this project is to implement the basic functionality
+with reduced complexity.  In particular:
+
+1. The source will be a mono-energetic point source emitted
+   isotropically. This simplifies the amount of input required to formulate a
+   problem, and reduces the breadth of random sampling capability needed for a
+   first version.  Future versions will allow the source to be distributed in
+   space, have non-isotropic emission directions, and support a variety of
+   ways to specify energy distributions.
+1. The interactions will be limited to isotropic scattering without energy
+   loss. The simulation will all occur at a single energy, representing a
+   1-group approach.  This simplifies the treatment of interaction physics in
+   the initial version, and eliminates the need for complex interaction
+   physics data.  Future versions might allow for simple models of energy loss
+   (e.g. from elastic collisions) or read data tables that capture more
+   detailed physics.
+
+
 ## Software Diagram
 
 Making progress on a software project is easier when the project has been
@@ -34,8 +65,7 @@ markdown file such as this.
       * assign fixed energy (for now)
   * Repeat until history is terminated
     * Look up mean free path for current material and particle energy
-    * Sample distance to nuclear interaction
-      * Calculate distance in units of mean free path
+    * Sample distance to nuclear interaction in mean free paths
     * Calculate distance to boundary
       * Initialize min(distance to surface)
       * Loop over bounding surfaces
@@ -54,9 +84,11 @@ markdown file such as this.
     * Check for termination conditions
 
 
+
 This detailed version emerged from a few rounds of less detailed diagramming:
 
 * [First Pass](first-pass.md)
 * [Initial Refinement](refinement.md)
 * [Scope and Progression](scope.md)
+* [Additional Refinement](additional.md)
 

@@ -27,7 +27,7 @@ with considerations for the current
       * Update position
     * Check for termination conditions
 
-[Additional rounds of refinement and scope consideration](additional.md)x are
+[Additional rounds of refinement and scope consideration](additional.md) are
 necessary to complete the detailed diagram.
 
 
