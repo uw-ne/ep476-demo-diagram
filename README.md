@@ -55,9 +55,9 @@ markdown file such as this.
 
 This detailed version emerged from a few rounds of less detailed diagramming:
 
-* [First Pass][first-pass.md]
-* [Initial Refinement][refinement.md]
-* [Scope and Progression][scope.md]
+* [First Pass](first-pass.md)
+* [Initial Refinement](refinement.md)
+* [Scope and Progression](scope.md)
 
 
 

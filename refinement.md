@@ -4,7 +4,7 @@
 
 ### Initial Refinement
 
-From the [first pass][first-pass.md] diagram, it is useful to refine it and
+From the [first pass](first-pass.md) diagram, it is useful to refine it and
 add detail at each layer.  Refinement of this diagram is often best
 accomplished in a nearly "depth-first" approach.  Take block from the coarse
 diagram and define all the blocks necessary to achieve that block, and then

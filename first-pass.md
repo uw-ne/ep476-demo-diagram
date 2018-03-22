@@ -15,4 +15,4 @@ coarse granularity, covering the majority of what needs to happen.
       * Update position
     * Check for termination conditions
 
-Once confident in this first pass, the next step is to [refine][refinement.md].
+Once confident in this first pass, the next step is to [refine](refinement.md).
