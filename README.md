@@ -39,6 +39,7 @@ markdown file such as this.
     * Calculate distance to boundary
       * Initialize min(distance to surface)
       * Loop over bounding surfaces
+        * Calculate distance to surface
         * Update min(distance to surface)
         * Store surface with min(distance to surface)
       * Convert min(distance to surface) to mean free paths
