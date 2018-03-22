@@ -44,6 +44,17 @@ with reduced complexity.  In particular:
    (e.g. from elastic collisions) or read data tables that capture more
    detailed physics.
 
+## Data Models
+
+In the process of diagramming the software and defining the interfaces of
+specific functions, some data models were defined.
+
+- particle_state : a dictionary with keys that correspond to information about
+  the particle such as:
+   - 'position' : (1x3 numpy array) coordinates of the particle's current position
+   - 'direction' : (1x3 numpy array) the unit vector for the particles current direction
+   - 'energy' : (float) current energy of the particle
+   - 'cell' : (string) name of current region in which particle is traveling
 
 ## Software Diagram
 
@@ -55,16 +66,16 @@ software package to a text-based outline.  The latter is most effective for a
 markdown file such as this.
 
 * Define domain & source
-* Loop over many histories
-  * Sample source characteristics
+* (#5) Loop over many histories
+  * (#4) Sample source characteristics
     * Sample position
       * assign fixed point source position (for now)
     * Sample direction
-      * sample an angle from an isotropic distribution in 4*pi (for now)
+      * (#3) sample an angle from an isotropic distribution in 4*pi (for now)
     * Sample energy
       * assign fixed energy (for now)
   * Repeat until history is terminated
-    * Look up mean free path for current material and particle energy
+    * (#7) Look up mean free path for current material and particle energy
     * Sample distance to nuclear interaction in mean free paths
     * Calculate distance to boundary
       * Initialize min(distance to surface)
@@ -81,9 +92,7 @@ markdown file such as this.
           * return initial energy (for now)
     * Update position
     * Record contributions to tallies
-    * Check for termination conditions
-
-
+    * (#6) Check for termination conditions
 
 This detailed version emerged from a few rounds of less detailed diagramming:
 
@@ -91,4 +100,3 @@ This detailed version emerged from a few rounds of less detailed diagramming:
 * [Initial Refinement](refinement.md)
 * [Scope and Progression](scope.md)
 * [Additional Refinement](additional.md)
-
